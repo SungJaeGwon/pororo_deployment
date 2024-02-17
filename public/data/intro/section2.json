@@ -1,0 +1,11 @@
+{
+    "slide": [
+        {"no":"sec2_image_01", "이미지":"sec2_01.png", "title":"BEST"},
+        {"no":"sec2_image_02", "이미지":"sec2_02.png", "title":"연령별"},
+        {"no":"sec2_image_03", "이미지":"sec2_03.png", "title":"완구"},
+        {"no":"sec2_image_04", "이미지":"sec2_04.png", "title":"도서"},
+        {"no":"sec2_image_05", "이미지":"sec2_05.png", "title":"식기"},
+        {"no":"sec2_image_06", "이미지":"sec2_06.png", "title":"용품"},
+        {"no":"sec2_image_07", "이미지":"sec2_07.png", "title":"선물하기"}
+    ]
+}

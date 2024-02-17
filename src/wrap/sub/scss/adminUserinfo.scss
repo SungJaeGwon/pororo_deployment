@@ -1,0 +1,109 @@
+#Userinfo{
+    width: 100%;
+    margin-top: 60px;
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        .title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+            h2{
+                font-size: 28px;
+                font-weight: 600;
+            }
+        }
+        .content{
+            width: 100%;
+            margin-bottom: 60px;
+            table{
+                align-items: center ;
+                text-align: center;
+                width: 100%;
+                thead{
+                    height: 50px;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    tr{
+                        th{
+
+                        }
+                    }
+                }
+                tbody{
+                    width: 100%;
+                    tr{
+                        margin-bottom: 50px;
+                        text-align: center;
+                        height: 50px;
+                        td{
+                            color: #666;
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+                        .button-box{
+                            margin-top: 5px;
+                            display: flex;
+                            align-items: end;
+                            button{
+                                transform: translateY(10px);
+                                margin: 0 3px;
+                                width: 35px;
+                                height: 20px;
+                                color: #fff;
+                                background: #00BC70;
+                                border-radius: 3px;
+                                font-size: 10px;
+                                font-weight: 600;
+                                cursor: pointer;
+                                border: 0;
+                                transition: all 0.3s ease-in-out;
+                                &:hover{
+                                    background: #fff;
+                                    color: #00BC70;
+                                    border: 1px solid #00BC70;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #pagenation{
+                width: 100%;
+                margin-top: 60px;
+                height: 40px;
+                .pagenation-box{
+                    width: 100%;
+                    height: 100%;
+                    ul{
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                        height: 100%;
+                        li{
+                            button{
+                                cursor: pointer;
+                                width: 40px;
+                                height: 40px;
+                                align-items: center;
+                                text-align: center;
+                                font-size: 16px;
+                                line-height: 22px;
+                                border: 0;
+                                background: #fff;
+                                color: #999;
+                                &.on{
+                                    color: #000;
+                                    border-bottom: 2px solid #00BC70;
+                                }
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}

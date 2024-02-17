@@ -1,0 +1,395 @@
+#header {
+    width: 100%;
+    height: 88px;
+    border-bottom: 1px solid #ddd;
+    box-shadow:  0 2px 8px 0 rgba(0,0,0,0.05);
+    font-family: 'Montserrat, Pretendard, sans-serif';
+    &.fixed {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    .container {
+        width: 100%;
+        max-width: 1280px;
+        height: 100%;
+        margin: 0 auto;
+        .content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .main_logo {
+                width: 120px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                a {
+                    width: 100%;
+                    display: block;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+            .nav_box {
+                height: 100%;
+                > ul {
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    > li {
+                        text-align: center;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            .sub_box {
+                                display: block;
+                                height: auto;
+                                transition: all 0.5s ease-in-out;
+                            }    
+                            strong {
+                                color: #1e58c6;
+                                &::after {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        > a { // 전체상품
+                            height: 100%;
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 25px;
+                            position: relative;
+                            img {
+                                width: auto; 
+                                margin: 0 5px 0 0;
+                            }
+                            strong {
+                                position: relative;
+                                padding: 30px 0;    
+                                font-size: 16px; 
+                                font-weight: 600;
+                                color: #333;
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%; 
+                                    transform: translateX(-50%);    
+                                    width: 0;  
+                                    height: 3px;
+                                    background: #1e58c6;
+                                    transition: all 0.3s;
+                                }
+                            }
+                            .main_tool_box {
+                                position: absolute;
+                                z-index: 10;
+                                left: 0;
+                                top: 70px;
+                                width: 142px;
+                                height: auto;
+                                padding: 16px;
+                                text-align: center;
+                                background: #fff;
+                                border: 1px solid #999;
+                                border-radius: 10px;
+                                > ul {
+                                    width: 100%;
+                                    > li {
+                                        width: 100%;
+                                        a {
+                                            display: block;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            color: #9a9a9a;
+                                            line-height: 170%;
+                                            &:hover {
+                                                color: #333;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        > .sub_box {
+                            position: absolute;
+                            z-index: 3;
+                            left: 0;       
+                            width: 100%; 
+                            height: 0px;
+                            display: none;
+                            background: #fff;
+                            transform: translateY(2px);
+                            padding-bottom: 70px;
+                            box-shadow:  0 2px 8px 0 rgba(0,0,0,0.1);
+                            > .sub_menu {    
+                                width: 100%;
+                                max-width: 1280px;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: space-between;
+                                > li {
+                                    text-align: left;
+                                    > .title {  // 완구
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 120%;
+                                        padding: 20px 0;
+                                        color: #333;
+                                        text-align: left;
+                                    }
+                                    > .sub_box2 {
+                                        width: 100%;
+                                        > .sub_menu2 {
+                                            width: 100%;
+                                            > li {
+                                                width: 100%;
+                                                position: relative;
+                                                padding: 13px 0;
+                                                text-align: left;
+                                                > a { // 하위메뉴
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    padding: 0 30px 0 0;
+                                                    text-align: left;
+                                                    position: relative;
+                                                    transition: all 0.2s ease-in-out;
+                                                    &:hover {
+                                                        span {
+                                                            color: #333;
+                                                        }
+                                                        .arrow_box {
+                                                            top: 3px;
+                                                            transform: rotate(180deg);
+                                                        }
+                                                    }
+                                                    > span {
+                                                        width: 100%;
+                                                        font-size: 14px;
+                                                        font-weight: normal;
+                                                        color: #999;
+                                                        letter-spacing: -1px;
+                                                        // padding: 0 0 20px 0;
+                                                    }
+                                                    .arrow_box {
+                                                        position: absolute;
+                                                        top: -2px;
+                                                        right: 10%;
+                                                        background: transparent;
+                                                        transition: all 0.3s ease-in-out;
+                                                        img {
+                                                            width: auto;
+                                                        }
+                                                    }
+                                                }
+                                                .tool_box {  // 툴팁
+                                                    position: absolute;
+                                                    z-index: 100;
+                                                    width: 100%;
+                                                    top: 10px;
+                                                    left: 95%;
+                                                    padding: 10px 20px 10px 13px;
+                                                    background: #f9f9f9;
+                                                    border: 1px solid #999;
+                                                    border-radius: 15px;
+                                                    ul {
+                                                        width: 100%;
+                                                        li {    
+                                                            width: 100%;
+                                                            a {
+                                                                font-size: 12px;
+                                                                font-weight: 500;
+                                                                line-height: 170%;
+                                                                color: #777;
+                                                                letter-spacing: -1px;
+                                                                &:hover {
+                                                                    color: #333;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+            .search_box {
+                width: 260px;
+                position: relative;
+                input {
+                    width: 100%;
+                    height: 40px;
+                    background: transparent;
+                    border: 1px solid #ddd;
+                    color: #eee;
+                    font-size: 13px;
+                    padding: 0 40px 0 15px;
+                    border-radius: 15px;
+                }
+                button {
+                    position: absolute;
+                    top: 20%;
+                    right: 10px;
+                    border: 0;
+                    background: transparent;
+                    cursor: pointer;
+                    width: 24px;
+                    height: 24px;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+            .menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                a {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 0 0 25px;
+                    position: relative;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                    }
+                    span {
+                        position: absolute;
+                        top: 30px;
+                        left: 15px;
+                        width: 15px;
+                        height: 15px;
+                        background: #ff4948;
+                        border-radius: 16px;
+                        color: #fff;
+                        font-size: 11px;
+                        font-weight: 700;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    > .main_tool_box {
+                        position: absolute;
+                        transform: translateX(-50px);
+                        z-index: 10;
+                        left: 0;
+                        top: 70px;
+                        width: 125px;
+                        height: auto;
+                        padding: 16px 0;
+                        text-align: left;
+                        background: #fff;
+                        border: 1px solid #999;
+                        border-radius: 10px;
+                        &.admin {
+                            width: 142px;
+                        }
+                        > ul {
+                            width: 100%;
+                            // text-align: left;
+                            > li {
+                                width: 100%;
+                                // text-align: left;
+                                > a {
+                                    display: block;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #9a9a9a;
+                                    line-height: 170%;
+                                    &:hover {
+                                        color: #333;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .cart-alert {
+                        z-index: 2;
+                        bottom: -115px;
+                        right:0;
+                        position: absolute;
+                        width:350px;
+                        background: #fff;                                        
+                        border: 1px solid #eee;
+                        &::before {
+                            z-index: 2;
+                            content:'';
+                            position: absolute;
+                            top: -11px;
+                            right: 5px;
+                            width: 18px;
+                            height: 11px;
+                            background: url(../../../public/images/header/icon_try.svg) no-repeat 50% 50%;
+                        }
+                        .cart-gap {
+                            width:100%;   
+                            padding: 15px;
+                            display: flex;
+                            .left {
+                                width:50px;
+                                height: auto;
+                                img {
+                                    width: 50px;
+                                    height: 100%;
+                                }
+                            }
+                            .right {
+                                width:auto;
+                                ul {
+                                    padding: 0 0 0 20px;
+                                    li {
+                                        width: 100%;                                                
+                                        padding: 4px 0;
+                                        h2 {
+                                            color:#999;  
+                                            font-size: 14px;                                                          
+                                        }
+                                        p {
+                                            color: #333;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    i {
+                        margin-right: 3px;
+                        &.on {
+                            color: #1e58c6;
+                        }
+                    }
+                    strong {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #000;
+                        &.on {
+                            color: #1e58c6;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

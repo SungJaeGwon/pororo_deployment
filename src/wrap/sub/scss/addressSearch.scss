@@ -1,0 +1,120 @@
+#postCode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        width: 500px;
+        height: 600px;
+        background: #fff;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        .header {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-bottom: 1px solid #ddd;
+            background: #1e58c6;
+            h1 {
+                padding-left: 10px;
+                width: 100%;
+                font-size: 24px;
+                font-weight: 500;
+                color: #fff;
+            }
+            button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 40px;
+                height: 20px;
+                border: 0;
+                background: url(../../../../public/images/sub7/icon_bigClose.png) no-repeat 50% 50%;
+                cursor: pointer;
+            }
+        }
+        .content {  
+            position: relative;
+            width: 100%;
+            height: 540px;
+            padding: 40px 30px 20px 30px;
+            .binding_box {
+                width: 100%;
+                ul {
+                    width: 100%;
+                    li {
+                        width: 100%;
+                        padding: 10px 0;
+                        position: relative;
+                        &:nth-child(2){
+                            padding-bottom: 0;
+                        }
+                        input {
+                            width: 80%;
+                            height: 50px;
+                            color: #252525;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 6px;
+                            padding: 0 15px;
+                            background: #fff;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #333;
+                            letter-spacing: -1px;
+                            margin: 10px 0;
+                            &:last-child {
+                                width: 100%;
+                            }
+                        }
+                        button {
+                            position: absolute;
+                            z-index: 2;
+                            right: 0;
+                            top: 20px;
+                            width: 18%;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #00BC70;
+                            border: 1px solid #00BC70;
+                            border-radius: 8px;
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 500;
+                            cursor: pointer;
+                        }
+                        h2 {
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+            .button_Box {
+                padding-top: 30px;
+                button {
+                    width: 100%;
+                    height: 44px;
+                    border: 1px solid #1e58c6; 
+                    color: #fff;
+                    background: #1e58c6;
+                    border-radius: 3px;  
+                    font-size: 18px;
+                    font-weight: 600;  
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

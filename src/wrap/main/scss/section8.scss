@@ -1,0 +1,69 @@
+#section8 {
+    width: 100%;
+    .container {
+        width: 100%;
+        max-width: 1160px;
+        margin: 0 auto;
+        position: relative;
+        .title {
+            width: 100%;
+            padding: 140px 0 80px 0;
+            text-align: center;
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+                color: #111;
+            }
+        }
+        .content {
+            width: 100%;
+            position: relative;
+            .swiper {
+                width: calc( 182.8 * 7);
+                padding-top: 0;
+                overflow: hidden;
+                margin: 0 60px;
+                position: relative;
+                .swiper-wrapper {
+                    height: 148.56px;
+                    display: flex;
+                    user-select: none;
+                    .swiper-slide {
+                        width: 148.56px;
+                        height: 148.56px;
+                        .swiper-slide img {
+                            display: block;
+                            width: 148.56px;
+                            height: 148.56px;
+                            object-fit: cover;
+                          }
+                      }
+                }
+            }
+            .swiper-button-prev {
+            position: absolute;
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            top: 40%;
+            left: 0px;
+            background: url(../../../../public/images/intro/section8/icon_left.png) no-repeat 50% 50%;
+            --swiper-theme-color: #ddd;
+            --swiper-navigation-size: 0;
+            cursor: pointer;
+            }
+            .swiper-button-next {
+            position: absolute;
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            background: url(../../../../public/images/intro/section8/icon_right.png) no-repeat 50% 50%;
+            --swiper-navigation-size: 0;
+            top: 40%;
+            right: 0px;
+            --swiper-theme-color: #ddd;
+            cursor: pointer;
+            }
+        }
+    }
+}

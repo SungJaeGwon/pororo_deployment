@@ -1,0 +1,522 @@
+@mixin resStar {
+    margin-left: 2px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(237, 94, 7);
+}
+@mixin leftInput {
+    width: 150px;
+    height: 60px;
+    padding: 12px 15px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    strong {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        line-height: 120%;
+    }
+}
+@mixin duplication {
+    width: 9%;
+    height: 36px;
+    margin-right: 10px;
+    cursor: pointer;
+    .duplication_btn {
+        background: #1e58c6;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #1e58c6;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &.fix {
+            background: #1e58c6;
+            border: 1px solid #1e58c6;
+            color: #fff;
+        }
+        &.off {
+            background: #f0f0f0;
+            border: 1px solid #f0f0f0;
+            color: #bbb;
+        }
+    }
+}
+
+
+#signUp {
+    width: 100%;
+    padding: 120px 0;
+    user-select: none;
+    .container {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        .title {
+            width: 100%;
+            text-align: center;
+            padding: 0 0 80px 0;
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 120%;
+                color: #222;
+            }
+        }
+        .user_info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #eee;
+            img {
+                width:  50px;
+                height: 50px;
+            }
+            > p {
+                padding-left: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                color: #333;
+                line-height: 120%;
+                > span {
+                    display: inline-block;
+                    transform: translateY(-3px);
+                    color: #111;
+                    font-weight: 600;
+                }
+            }
+        }
+        form {
+            width: 100%;
+            .member {
+                width: 100%;
+                border-top: 2px solid #000;
+                li {
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #eee;
+                    .left {
+                        @include leftInput();
+                        span {
+                            @include resStar();
+                        }
+                    }
+                    .right {
+                        width: 100%;
+                        padding: 12px 15px;
+                        input {
+                            appearance: none;
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 10px;
+                            background: url(../../../../public/images/sub7/icon_radio_ok.png) no-repeat 50% 50%;
+                        }
+                        label {
+                            font-size: 14px;
+                            color: #888;
+                        }
+                    }
+                }
+            }
+            .form_box {
+                width: 100%;
+                .sub_title {
+                    width: 100%;
+                    padding: 60px 0 26px 0;
+                    border-bottom: 2px solid #000;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3 {
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #222;
+                    }
+                    .side_text {
+                        display: flex;
+                        span {
+                            @include resStar();
+                        }
+                        p {
+                            font-size: 12px;
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+                .data_box {
+                    width: 100%;
+                    .data_list {
+                        width: 100%;
+                        display: flex;
+                        border-bottom: 1px solid #eee;
+                        .left {
+                            @include leftInput();
+                            span {
+                                @include resStar();
+                            }
+                            &.address {
+                                width: 150px;
+                                height: 60px;
+                                padding: 12px 15px;
+                                background: #fafafa;
+                                display: flex;
+                                align-items: center;
+                                strong {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #333;
+                                    line-height: 120%;
+                                }
+                                &.on {
+                                    height: auto;
+                                }
+                            }
+                        }
+                        > .address_right{
+                            width: 100%;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            position: relative;
+                            > .right {
+                                &:nth-child(1){
+                                    padding-bottom: 0;
+                                }
+                                > .input_obj {
+                                    user-select: none;
+                                    width: 500px;
+                                    height: 36px;
+                                    color: #252525;
+                                    border: 1px solid #e6e6e6;
+                                    border-radius: 6px;
+                                    padding: 0 15px;
+                                    background: #fff;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    color: #333;
+                                    letter-spacing: -1px;
+                                }
+                                .duplicationButton_box {
+                                    position: absolute;
+                                    z-index: 2;
+                                    right: 44%;
+                                    top: 12px;
+                                    width: 10%;
+                                    height: 36px;
+                                    cursor: pointer;
+                                    .duplication_btn {
+                                        background: #fff;
+                                        width: 100%;
+                                        height: 100%;
+                                        border: 1px solid #ddd;
+                                        border-radius: 10px;
+                                        color: #333;
+                                        font-size: 14px;
+                                        cursor: pointer;
+                                        transition: all 0.2s ease-in-out;
+                                        &:hover {
+                                            font-weight: 500;
+                                            color: #fff;
+                                            background: #1e58c6;
+                                        }
+                                        &.fix {
+                                            background: #1e58c6;
+                                            border: 1px solid #1e58c6;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                            width: 100%;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            padding: 12px 18px;
+                            input {
+                                width: 250px;
+                                height: 36px;
+                                padding: 0 15px;
+                                margin-right: 15px;
+                                font-size: 14px;
+                                border: 1px solid #ddd;
+                                border-radius: 5px;
+                                outline-offset: -1px;
+                                outline: 1px solid transparent;
+                                transition: all 0.3s;
+                                &:focus {
+                                    outline-color: #777;
+                                }
+                            }
+                            .duplicationButton_box {
+                                &.email {
+                                    @include duplication();
+                                }
+                                &.id {
+                                    @include duplication();
+                                }
+                                &.hp {
+                                    @include duplication();
+                                }
+                                &.address {
+                                    @include duplication();
+                                    margin-left: 20px;
+                                }
+                            }
+                            .guid_text {
+                                font-size: 0;
+                                color: #f03f40;
+                                padding: 0;
+                                line-height: 0;
+                                &.on {
+                                    font-size: 13px;  
+                                    padding: 5px 0;
+                                    line-height: 140%;
+                                }
+                            }
+                            .address_btn {
+                                width: 365px;
+                                height: 36px;
+                                background: #1e58c6;
+                                border: 1px solid #1e58c6;
+                                color:#fff;
+                                font-weight: 600;
+                                font-size: 18px;
+                                border-radius: 3px;
+                                letter-spacing: 3px;
+                                cursor: pointer;
+                            }
+                            .hide_text_box {
+                                position: absolute;
+                                z-index: 2;
+                                top: 0;
+                                left: 25%;
+                                width: 340px;
+                                padding: 12px;
+                                background: #f6f6f6;
+                                border: 1px solid #ddd;
+                                &.ok {
+                                    background: transparent;
+                                    border: 0;
+                                }
+                                .hide_text {
+                                    font-size: 0;
+                                    color: #fff;
+                                    padding: 0;
+                                    line-height: 0;
+                                    &.red {
+                                        font-size: 14px;
+                                        padding: 8px 0;
+                                        line-height: 140%;
+                                        color: #f03f40;
+                                    }
+                                    &.green {
+                                        font-size: 14px;
+                                        padding: 8px 0;
+                                        line-height: 140%;
+                                        color: #00BC70;
+                                    }
+                                }
+                            }
+                            &.hp {
+                                width: 100%;
+                                select {
+                                    width: 70px;
+                                    height: 36px;
+                                    padding: 0 7px;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    border: 1px solid #ddd;
+                                }
+                                i {
+                                    margin: 0 10px;
+                                }
+                                input {
+                                    width: 65px;
+                                    height: 36px;
+                                    margin: 0;
+                                    font-size: 15px;
+                                    padding: 0 7px;
+                                    text-align: center;
+                                    &.last {
+                                        margin-right: 15px;
+                                    }
+                                }
+                            }
+                            &.birth {
+                                >input {
+                                    width: 80px;
+                                    margin: 0;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    color: #333;
+                                    margin: 0 10px;
+                                }
+                                > input[name='radio'] {
+                                    appearance: none;
+                                    width: 20px;
+                                    height: 20px;
+                                    margin: 0 2px 0 10px;
+                                    border: 0;
+                                    background: url(../../../../public/images/sub7/icon_radio_ok.png) no-repeat 50% 50%;
+                                }
+                                label {
+                                    font-size: 14px;
+                                    color: #888;
+                                }
+                            }
+                        }
+                    }
+                }
+                .agree_box {
+                    width: 100%;
+                    .all_agree {
+                        width: 100%;
+                        height: 50px;
+                        padding: 10px 20px;
+                        border-bottom: 1px solid #ddd;
+                        line-height: 160%;
+                        input {
+                            appearance: none;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 15px;
+                            background: url(../../../../public/images/sub7/icon_checkbox.gif) no-repeat 50% 50%;
+                            &:checked {
+                                background: url(../../../../public/images/sub7/icon_checkbox_on.gif) no-repeat 50% 50%;
+                            }
+                        }
+                        label {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #333;
+                        }
+                    }
+                    .check_box {
+                        width: 100%;
+                        li {
+                            width: 100%;
+                            height: 50px;
+                            padding: 10px 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &:last-child {
+                                padding: 10px 20px 20px 20px;
+                                border-bottom: 1px solid #ddd;
+                            }
+                            .input_box {
+                                width: 90%;
+                                input {
+                                    appearance: none;
+                                    width: 16px;
+                                    height: 16px;
+                                    margin-right: 15px;
+                                    background: url(../../../../public/images/sub7/icon_checkbox.gif) no-repeat 50% 50%;
+                                    &:checked {
+                                        background: url(../../../../public/images/sub7/icon_checkbox_on.gif) no-repeat 50% 50%;
+                                    }
+                                }
+                                label {
+                                    font-size: 14px;
+                                    color: #999;
+                                }
+                            }
+                            a {
+                                display: block;
+                                width: 10%;
+                                span {
+                                    font-size: 14px;
+                                    color: #999;
+                                    padding-bottom: 3px;
+                                    border-bottom: 1px solid #999;
+                                }
+                            }
+                        }
+                    }
+                }
+                .button_box {
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto;
+                    padding-top: 70px;
+                    button {
+                        width: 100%;
+                        height: 50px;
+                        background: #1e58c6;
+                        border: 1px solid #1e58c6;
+                        border-radius: 3px;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+                .update_button_box {
+                    width: 100%;
+                    position: relative;
+                    padding-top: 50px;
+                    .center {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        a {
+                            width: 120px;
+                            height: 50px;
+                            line-height: 50px;
+                            padding: 0 10px;
+                            text-align: center;
+                            font-size: 15px;
+                            color: #fff;
+                            &.cancel {
+                                background: #777;
+                            }
+                            &:last-child {
+                                margin-left: 10px;
+                            }
+                        }
+                        button {
+                            width: 120px;
+                            height: 50px;
+                            font-size: 15px;
+                            color: #fff;
+                            background: #333;
+                            border: 1px solid #333;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                            &:hover {
+                                background: #111;
+                            }
+                        }
+                    }
+                    > button {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 130px;
+                        height: 50px;
+                        padding: 15px 20px;
+                        text-align: center;
+                        font-size: 15px;
+                        color: #333;
+                        background: #fff;
+                        border: 1px solid #eee;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
