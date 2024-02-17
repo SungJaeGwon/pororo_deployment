@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/SungJaeGwon/pororo_deployment.git/static/css/main.9ebf6194.css",
+    "main.js": "/SungJaeGwon/pororo_deployment.git/static/js/main.64418c34.js",
+    "static/media/section5_left.png": "/SungJaeGwon/pororo_deployment.git/static/media/section5_left.56f7fadf39ff1b3c6ee6.png",
+    "static/media/sec6_02.png": "/SungJaeGwon/pororo_deployment.git/static/media/sec6_02.10412c384745aed1e000.png",
+    "static/media/sec6_01.png": "/SungJaeGwon/pororo_deployment.git/static/media/sec6_01.f9d6554122d1a5482ee8.png",
+    "static/media/icon_prevArrow.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_prevArrow.c0bfeaf2e9f1c56ccec4.svg",
+    "static/media/icon_try.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_try.fd310ea30b78e5aa57c7.svg",
+    "index.html": "/SungJaeGwon/pororo_deployment.git/index.html",
+    "static/media/icon_nextArrow.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_nextArrow.1b3ff88026ae98974c2c.svg",
+    "static/media/icon_chk_off.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_chk_off.6b06dd79913a9087447e.svg",
+    "static/media/icon_chk_on.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_chk_on.ff6a7ef5bcf47a18cd5b.svg",
+    "static/media/icon_check.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_check.1349c49e7ac5d2de8d17.svg",
+    "static/media/top_close.svg": "/SungJaeGwon/pororo_deployment.git/static/media/top_close.ee51ca109d50b88754d8.svg",
+    "static/media/icon_check_on.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_check_on.eda69500ea038b20023a.svg",
+    "static/media/icon_arrow_right_on.svg": "/SungJaeGwon/pororo_deployment.git/static/media/icon_arrow_right_on.42809190e4b3d747003f.svg",
+    "main.9ebf6194.css.map": "/SungJaeGwon/pororo_deployment.git/static/css/main.9ebf6194.css.map",
+    "main.64418c34.js.map": "/SungJaeGwon/pororo_deployment.git/static/js/main.64418c34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ebf6194.css",
+    "static/js/main.64418c34.js"
+  ]
+}
